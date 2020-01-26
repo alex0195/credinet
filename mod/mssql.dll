@@ -1,0 +1,7 @@
+<%
+Set bdd_mssql = Server.CreateObject ("ADODB.Connection")
+Set tabla_mssql = Server.CreateObject ("ADODB.RecordSet")
+tabla_mssql.cursorLocation=1
+tabla_mssql.cursortype=1
+bdd_mssql.Open "DRIVER={SQL Server};Server=192.168.1.138; Database=creditel; UID=sa; PWD=6151326"
+%>
